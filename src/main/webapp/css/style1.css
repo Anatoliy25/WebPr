@@ -1,0 +1,175 @@
+body {
+    display: block;
+    margin: 0px;
+    margin-top: -16px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+
+* {
+	font-family: 'Lucida Grande', Tahoma, Verdana, sans-serif;	
+}
+
+p{
+	text-align: left;
+	border-bottom: 1px solid #2D2D2D;
+	font-weight: bold;
+	line-height: 200%;
+}
+
+p.top, h1 {
+	text-align: center;
+	
+	border-bottom: 1px solid #2D2D2D;
+	//display: block; 
+	//width: 152px; 
+	//height: 32px;		
+	font-variant: all-caps; 
+	color: #000000; 
+	font-weight: bold; 
+	text-decoration:none; 	
+	line-height: 170%;
+}
+	
+#topref{
+text-decoration:none;
+color: #000000;
+}	
+
+.rp{
+		
+		border-top: 1px solid #2D2D2D;
+		border-bottom: 1px solid #2D2D2D;
+		display: block; 
+		width: 152px; 
+		height: 32px;		
+		font-variant: all-caps; 
+		color: #000000; 
+		font-weight: bold; 
+		text-decoration:none; 
+		text-align: center;
+		line-height: 170%
+    }
+
+
+
+#main{
+	
+  width: 1920px; 
+  height: 1000px; 
+  background-image: url(../img/games.jpg);
+}
+#top{
+	
+	width: 1920px;
+	height: 35px;
+	background:#dcccb8;
+}
+
+#game{
+	
+background:#000000;
+width:490px;
+height:490px;
+position:absolute;
+left:350px;
+top:130px;	
+}
+
+#game1{
+background:#8080ff;
+width:150px;
+height:150px;
+position:absolute;
+left:10px;
+top:10px;	
+}
+
+#game2{
+background:#8080ff;
+width:150px;
+height:150px;
+position:absolute;
+left:170px;
+top:10px;	
+}
+#game3{
+background:#8080ff;
+width:150px;
+height:150px;
+position:absolute;
+left:330px;
+top:10px;	
+}
+
+#game4{
+background:#8080ff;
+width:150px;
+height:150px;
+position:absolute;
+left:10px;
+top:170px;	
+}
+
+#game5{
+background:#8080ff;
+width:150px;
+height:150px;
+position:absolute;
+left:170px;
+top:170px;	
+}
+#game6{
+background:#8080ff;
+width:150px;
+height:150px;
+position:absolute;
+left:330px;
+top:170px;	
+}
+#game7{
+background:#8080ff;
+width:150px;
+height:150px;
+position:absolute;
+left:10px;
+top:330px;	
+}
+
+#game8{
+background:#8080ff;
+width:150px;
+height:150px;
+position:absolute;
+left:170px;
+top:330px;	
+}
+
+#game9{
+background:#8080ff;
+width:150px;
+height:150px;
+position:absolute;
+left:330px;
+top:330px;	
+}
+
+#rightpanel{
+background:#dcccb8;
+width:152px;
+height:200px;
+position:absolute;
+left:930px;
+top:130px;	
+}
+
+#leftpanel{
+padding:0px 10px 10px 10px;
+background:#dcccb8;
+width:160px;
+height:230px;
+position:absolute;
+left:50px;
+top:130px;	
+}
