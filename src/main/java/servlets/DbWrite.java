@@ -14,12 +14,8 @@ import com.google.gson.JsonObject;
 
 public class DbWrite extends HttpServlet {
 	
-	
-
 	private static final long serialVersionUID = 1L;
 
-	// public DbWrite(String str){
-	// this.str = str;
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		HttpSession session = request.getSession(true);
@@ -34,13 +30,10 @@ public class DbWrite extends HttpServlet {
 
 		Connection conn = null;
 		Statement stmt = null;
-		//this.doPost(request, response);
 
 		try {
-			// String str = "wins";
 			Class.forName(JDBC_DRIVER);
 			conn = DriverManager.getConnection(DB_URL, USER, PASS);
-
 			System.out.println("Creating statement...");
 			System.out.println(str);
 			System.out.println(login);
@@ -52,18 +45,10 @@ public class DbWrite extends HttpServlet {
 
 			e.printStackTrace();
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
+
 			e.printStackTrace();
 		}
 		
-		
-		
-		
-
 	}
-	
-	
-	
-	
 
 }
