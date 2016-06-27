@@ -9,16 +9,7 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-  <servlet>
-    <description></description>
-    <display-name>Servlet1</display-name>
-    <servlet-name>Servlet1</servlet-name>
-    <servlet-class>servlets.Servlet1</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>Servlet1</servlet-name>
-    <url-pattern>/Servlet1</url-pattern>
-  </servlet-mapping>
+  
   <servlet>
     <description></description>
     <display-name>DispatcherServlet</display-name>
