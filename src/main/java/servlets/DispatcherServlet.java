@@ -8,18 +8,14 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- * Servlet implementation class DispatcherServlet
- */
 public class DispatcherServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	public void forward(String to, HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+	public void forward(String to, HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(to);
 		dispatcher.forward(request, response);
-		
-		
-		
+
 	}
-       
-    
+
 }
