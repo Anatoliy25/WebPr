@@ -17,46 +17,33 @@ public class StartServlet extends DispatcherServlet {
 		String str = request.getParameter("login");
 		session.setAttribute("login", str);
 
-		if (request.getParameter("enter") != null){
-			
-			try{
-		        String Username = request.getParameter("login");   
-		        String password = request.getParameter("password");
-		        Class.forName("com.mysql.jdbc.Driver");  // MySQL database connection
-		        Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/WebPr","root","root");
-		        PreparedStatement pst = conn.prepareStatement("Select Username,pass from users where Username=? and pass=?");
-		        pst.setString(1, Username);
-		        pst.setString(2, password);
-		        ResultSet rs = pst.executeQuery();                        
-		        if(rs.next()) {          
-		            System.out.println("Valid login credentials");  
-		        	super.forward("/test.jsp", request, response);
-		        }
-		        else {
-		        	System.out.println("Invalid login credentials");
-		        	super.forward("/index.jsp", request, response);
-	        	}
-		            
-		        
-		   }
-		   catch(Exception e){       
-		       e.printStackTrace();       
-		   }   
-			/*finally{
-				try {
-					conn.close();
-				} catch (SQLException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
+		if (request.getParameter("enter") != null) {
+
+			try {
+				String Username = request.getParameter("login");
+				String password = request.getParameter("password");
+				Class.forName("com.mysql.jdbc.Driver"); // MySQL database
+														// connection
+				Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/WebPr", "root", "root");
+				PreparedStatement pst = conn
+						.prepareStatement("Select Username,pass from users where Username=? and pass=?");
+				pst.setString(1, Username);
+				pst.setString(2, password);
+				ResultSet rs = pst.executeQuery();
+				if (rs.next()) {
+					System.out.println("Valid login credentials");
+					super.forward("/test.jsp", request, response);
+				} else {
+					System.out.println("Invalid login credentials");
+					super.forward("/index.jsp", request, response);
 				}
-				
-			}*/
-			
-			
-			
-			
+
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+
 		}
-			
+
 		else if (request.getParameter("register") != null)
 			super.forward("/registration.jsp", request, response);
 	}
