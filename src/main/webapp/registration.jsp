@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<form action = "StartServlet1" method = "POST" class = "login" >
+<form action = "Registration" method = "POST" class = "login" >
         Имя: <input type = "text" name = "name"/>
 		Логин: <input type = "text" name = "login"/>
 		Пароль: <input type = "password" name = "password"/>

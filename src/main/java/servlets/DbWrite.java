@@ -13,13 +13,13 @@ import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 
 public class DbWrite extends HttpServlet {
-	
+
 	private static final long serialVersionUID = 1L;
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		HttpSession session = request.getSession(true);
-		String login = (String)session.getAttribute("login");
+		String login = (String) session.getAttribute("login");
 		JsonObject data = new Gson().fromJson(request.getReader(), JsonObject.class);
 		String str = data.get("foo").getAsString();
 		final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
@@ -37,9 +37,9 @@ public class DbWrite extends HttpServlet {
 			System.out.println("Creating statement...");
 			System.out.println(str);
 			System.out.println(login);
-			
+
 			stmt = conn.createStatement();
-			stmt.executeUpdate("UPDATE users SET  " + str + " = " + str + " + 1 where login = '"+login+"'");
+			stmt.executeUpdate("UPDATE users SET  " + str + " = " + str + " + 1 where login = '" + login + "'");
 
 		} catch (ClassNotFoundException e) {
 
@@ -48,7 +48,7 @@ public class DbWrite extends HttpServlet {
 
 			e.printStackTrace();
 		}
-		
+
 	}
 
 }

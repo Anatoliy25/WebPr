@@ -29,26 +29,7 @@
     <servlet-name>DispatcherServlet</servlet-name>
     <url-pattern>/DispatcherServlet</url-pattern>
   </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>StartServlet</display-name>
-    <servlet-name>StartServlet</servlet-name>
-    <servlet-class>servlets.StartServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>StartServlet</servlet-name>
-    <url-pattern>/StartServlet</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>StartServlet1</display-name>
-    <servlet-name>StartServlet1</servlet-name>
-    <servlet-class>servlets.StartServlet1</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>StartServlet1</servlet-name>
-    <url-pattern>/StartServlet1</url-pattern>
-  </servlet-mapping>
+  
   <servlet>
     <description></description>
     <display-name>Ajax</display-name>
@@ -68,5 +49,25 @@
   <servlet-mapping>
     <servlet-name>DbWrite</servlet-name>
     <url-pattern>/DbWrite</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Loginin</display-name>
+    <servlet-name>Loginin</servlet-name>
+    <servlet-class>servlets.Loginin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Loginin</servlet-name>
+    <url-pattern>/Loginin</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Registration</display-name>
+    <servlet-name>Registration</servlet-name>
+    <servlet-class>servlets.Registration</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Registration</servlet-name>
+    <url-pattern>/Registration</url-pattern>
   </servlet-mapping>
 </web-app>
