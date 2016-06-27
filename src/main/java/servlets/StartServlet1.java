@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-public class Registration extends DispatcherServlet {
+public class StartServlet1 extends DispatcherServlet {
 	private static final long serialVersionUID = 1;
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
